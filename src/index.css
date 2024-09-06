@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	/* background-image: url('./assets/bg.png');
+	background-position: center center;
+	background-size: cover;
+	height: 100%; */
+}
+
+*.p-category {
+	scrollbar-width: thin;
+	scrollbar-color: #999 #eee;
+}
+
+.p-category::-webkit-scrollbar {
+	width: 8px;
+}
+
+.p-category::-webkit-scrollbar-track {
+	background: #eee;
+}
+
+.p-category::-webkit-scrollbar-thumb {
+	background-color: #999;
+	border-radius: 20px;
+	border: 3px solid #eee;
+}
+
+.slick-track {
+	display: flex !important;
+	gap: 20px !important;
+}
+
+.slick-prev {
+	left: -45px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-size: 40px !important;
+	color: #b3b3b3 !important;
+}
+
+@media (max-width: 1024px) {
+	/* .slick-track {
+		width: 4420px !important;
+	} */
+
+	.slick-arrow {
+		display: none !important;
+	}
+}
+
